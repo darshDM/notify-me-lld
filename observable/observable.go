@@ -4,7 +4,7 @@ import (
 	"github.com/darshDM/notify-me-lld/observer"
 )
 
-type QuantityObserver interface {
+type QuantityObservable interface {
 	Add(no observer.NotifyObserver)
 	Remove(no observer.NotifyObserver)
 	NotifyAll(qty int)
